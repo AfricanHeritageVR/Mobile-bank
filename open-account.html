@@ -1,59 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account – Mobile Bank</title>
+    <title>Ouvrir un compte – Mobile Bank</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f5f7fa;
+            background: #f2f6fc;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: #2C7CFF;
+            padding: 15px;
             text-align: center;
-            padding: 30px;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
         }
         .container {
+            max-width: 600px;
+            margin: 40px auto;
             background: white;
-            max-width: 400px;
-            margin: auto;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 30px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
         }
-        input, select, button {
+        h1 {
+            text-align: center;
+            color: #2C7CFF;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
             width: 100%;
-            padding: 12px;
-            margin-top: 10px;
-            border: 1px solid #ddd;
-            border-radius: 6px;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
         button {
             background: #2C7CFF;
             color: white;
+            padding: 12px;
             border: none;
-            cursor: pointer;
+            width: 100%;
             font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
         }
         button:hover {
-            background: #155FCC;
+            opacity: 0.9;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h2>Create a New Account</h2>
-        <p>Please fill in your details below.</p>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="open-account.html">Ouvrir un compte</a>
+    </nav>
 
-        <input type="text" placeholder="Full Name">
-        <input type="email" placeholder="Email Address">
-        <input type="tel" placeholder="Phone Number">
+    <div class="container">
+        <h1>Ouvrir un compte</h1>
+
+        <label>Nom complet :</label>
+        <input type="text" placeholder="Votre nom complet">
+
+        <label>Date de naissance :</label>
+        <input type="date">
+
+        <label>Pays de résidence :</label>
         <select>
-            <option>Select Account Type</option>
-            <option>Personal Account</option>
-            <option>Business Account</option>
+            <option>Bénin</option>
+            <option>Togo</option>
+            <option>Côte d’Ivoire</option>
+            <option>Cameroun</option>
+            <option>Sénégal</option>
+            <option>Autre</option>
         </select>
 
-        <button>Create Account</button>
+        <label>Numéro de téléphone :</label>
+        <input type="text" placeholder="+229 XX XX XX XX">
+
+        <label>Email :</label>
+        <input type="email" placeholder="Votre adresse email">
+
+        <label>Mot de passe :</label>
+        <input type="password" placeholder="Créer un mot de passe">
+
+        <button>Créer mon compte</button>
     </div>
 
 </body>
