@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,63 +7,73 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #eef2f7;
-            padding: 30px;
+            background: #f2f6fc;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: #2C7CFF;
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
         }
         .container {
-            max-width: 700px;
+            padding: 40px;
+            max-width: 600px;
             margin: auto;
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         h1 {
-            text-align: center;
             color: #2C7CFF;
         }
         label {
-            display: block;
-            margin: 15px 0 5px;
             font-weight: bold;
         }
         input, textarea {
             width: 100%;
             padding: 10px;
-            border-radius: 5px;
+            margin-top: 8px;
+            margin-bottom: 15px;
             border: 1px solid #ccc;
-        }
-        textarea {
-            height: 150px;
+            border-radius: 5px;
         }
         button {
-            margin-top: 20px;
-            width: 100%;
+            background: #2C7CFF;
+            color: white;
             padding: 12px;
             border: none;
-            border-radius: 5px;
-            background-color: #2C7CFF;
-            color: white;
+            width: 100%;
             font-size: 16px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
 
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
     <div class="container">
-        <h1>Contact Us</h1>
-        <form>
-            <label>Name</label>
-            <input type="text" placeholder="Enter your name">
+        <h1>Contactez-nous</h1>
+        <p>Vous pouvez nous envoyer un message pour toute question ou demande d’assistance.</p>
 
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email address">
+        <label>Nom :</label>
+        <input type="text" placeholder="Votre nom">
 
-            <label>Message</label>
-            <textarea placeholder="Type your message"></textarea>
+        <label>Email :</label>
+        <input type="email" placeholder="Votre adresse email">
 
-            <button type="submit">Send Message</button>
-        </form>
+        <label>Message :</label>
+        <textarea rows="5" placeholder="Votre message..."></textarea>
+
+        <button>Envoyer</button>
     </div>
 
 </body>
