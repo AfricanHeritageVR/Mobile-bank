@@ -1,66 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>À propos – Mobile Bank</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f2f6fc;
-            margin: 0;
-            padding: 0;
-        }
-        nav {
-            background: #2C7CFF;
-            padding: 15px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            padding: 40px;
-            max-width: 700px;
-            margin: auto;
-        }
-        h1 {
-            color: #2C7CFF;
-        }
-        p {
-            font-size: 18px;
-        }
-    </style>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>À propos — Digibank Exauce</title>
+<style>
+  :root{--bg:#f6fbfd;--nav:#0b5f73;--muted:#2b3a3f}
+  body{margin:0;font-family:Inter,system-ui;color:var(--muted);background:var(--bg)}
+  header{background:#fff;border-bottom:1px solid rgba(11,95,115,0.06)}
+  .wrap{max-width:980px;margin:0 auto;padding:12px 18px;display:flex;justify-content:space-between;align-items:center}
+  nav{display:flex;gap:12px}
+  main{max-width:980px;margin:22px auto;padding:18px;background:#fff;border-radius:12px;box-shadow:0 8px 20px rgba(11,95,115,0.04)}
+  h1{color:var(--nav)}
+  p{line-height:1.7}
+</style>
 </head>
 <body>
-
+<header>
+  <div class="wrap">
+    <div style="font-weight:700;color:var(--nav)">Digibank Exauce</div>
     <nav>
-    <a href="index.html">Accueil</a>
-    <a href="about.html">À propos</a>
-    <a href="contact.html">Contact</a>
-    <a href="open-account.html">Ouvrir un compte</a>
-</nav>
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html">Contact</a>
+      <a href="open-account.html">Ouvrir un compte</a>
+      <a href="login.html">Connexion</a>
+    </nav>
+  </div>
+</header>
 
-    <div class="container">
-        <h1>À propos de Mobile Bank</h1>
-        <p>
-            Mobile Bank est une plateforme bancaire digitale créée pour offrir des solutions 
-            financières simples, rapides et accessibles à tous.
-        </p>
-
-        <p>
-            Notre mission est d’aider les particuliers et entrepreneurs à accéder à des services 
-            bancaires modernes, ouvrir un compte en quelques minutes, gérer leurs fonds et 
-            obtenir des prêts adaptés à leurs besoins.
-        </p>
-
-        <p>
-            Nous misons sur la transparence, la sécurité et l’innovation.
-        </p>
-    </div>
-
+<main>
+  <h1>À propos de Digibank Exauce</h1>
+  <p>Digibank Exauce est une plateforme mobile-first qui facilite l’accès aux services bancaires et au financement. Nous accompagnons les entrepreneurs et les particuliers avec des solutions simples, transparentes et adaptées aux réalités locales.</p>
+  <p>Notre mission : rendre le financement responsable, accessible et sécurisé. Nous offrons des comptes, des outils d’épargne et des micro-prêts structurés.</p>
+</main>
 </body>
 </html>
