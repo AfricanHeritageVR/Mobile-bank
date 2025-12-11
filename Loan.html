@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demande de prêt - MobiCash</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+        }
+        nav {
+            background: #fff;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            max-width: 400px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #007bff;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 15px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            background: #007bff;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <a href="dashboard.html">Tableau de bord</a>
+    <a href="open.html">Ouvrir un compte</a>
+    <a href="loan.html">Demander un prêt</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+    <h2>Demande de prêt</h2>
+
+    <label>Montant souhaité :</label>
+    <input type="number" placeholder="Ex: 50 000">
+
+    <label>Durée de remboursement :</label>
+    <select>
+        <option>1 mois</option>
+        <option>2 mois</option>
+        <option>3 mois</option>
+        <option>6 mois</option>
+    </select>
+
+    <label>Revenus mensuels :</label>
+    <input type="number" placeholder="Ex: 120 000">
+
+    <label>Raison du prêt :</label>
+    <input type="text" placeholder="Ex: Commerce, courses, urgence…">
+
+    <button>Soumettre la demande</button>
+</div>
+
+</body>
+</html>
