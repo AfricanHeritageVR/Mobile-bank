@@ -1,178 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>DigiBank - Prêts</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fa;
-      color: #003b70;
-    }
-
-    h1 {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 32px;
-      color: #003b70;
-    }
-
-    .loan-container {
-      max-width: 1100px;
-      margin: 40px auto;
-      padding: 15px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-      gap: 25px;
-    }
-
-    .loan-card {
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
-      border-left: 6px solid #003b70;
-    }
-
-    .loan-card h3 {
-      margin: 0 0 10px;
-      font-size: 22px;
-      color: #003b70;
-    }
-
-    .loan-card p {
-      margin: 8px 0;
-      font-size: 15px;
-      line-height: 1.5;
-    }
-
-    .apply-btn {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 18px;
-      background: #003b70;
-      color: white;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.2s;
-    }
-
-    .apply-btn:hover {
-      opacity: 0.8;
-    }
-
-    /* FORMULAIRE */
-    .loan-form {
-      max-width: 600px;
-      margin: 50px auto;
-      background: white;
-      padding: 25px;
-      border-radius: 10px;
-      box-shadow: 0px 4px 15px rgba(0,0,0,0.08);
-    }
-
-    .loan-form h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #003b70;
-    }
-
-    .loan-form input,
-    .loan-form select,
-    .loan-form textarea {
-      width: 100%;
-      padding: 12px;
-      margin-top: 10px;
-      border: 1px solid #cdd6e0;
-      border-radius: 8px;
-      font-size: 15px;
-    }
-
-    .loan-form button {
-      width: 100%;
-      padding: 14px;
-      margin-top: 20px;
-      background: #003b70;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 17px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DigiBank - Connexion</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- 🔵 HEADER (déjà ajouté par toi) -->
+<section class="login-form">
+    <h2>Connexion à DigiBank</h2>
 
-<h1>Nos Offres de Prêts</h1>
+    <form action="dashboard.html">
+        <label>Email :</label>
+        <input type="email" placeholder="Votre adresse email" required>
 
-<div class="loan-container">
+        <label>Mot de passe :</label>
+        <input type="password" placeholder="Votre mot de passe" required>
 
-  <div class="loan-card">
-    <h3>Prêt Express</h3>
-    <p>Montant maximum : <strong>250 000 FCFA</strong></p>
-    <p>Durée : 1 à 3 mois</p>
-    <p>Taux : 3% / mois</p>
-    <a href="#loan-form" class="apply-btn">Demander ce prêt</a>
-  </div>
+        <button class="btn">Se connecter</button>
+    </form>
 
-  <div class="loan-card">
-    <h3>Prêt Projet</h3>
-    <p>Montant : <strong>1 000 000 FCFA</strong></p>
-    <p>Durée : 6 à 12 mois</p>
-    <p>Taux : 2.5% / mois</p>
-    <a href="#loan-form" class="apply-btn">Demander ce prêt</a>
-  </div>
+    <p>Pas encore de compte ?  
+       <a href="signup.html">Créer un compte</a>
+    </p>
 
-  <div class="loan-card">
-    <h3>Prêt Business</h3>
-    <p>Montant : <strong>5 000 000 FCFA</strong></p>
-    <p>Durée : 6 à 24 mois</p>
-    <p>Taux : 2% / mois</p>
-    <a href="#loan-form" class="apply-btn">Demander ce prêt</a>
-  </div>
-
-</div>
-
-<!-- FORMULAIRE DE DEMANDE -->
-<div class="loan-form" id="loan-form">
-  <h2>Demande de Prêt</h2>
-
-  <form name="loanRequest" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="loanRequest">
-
-    <label>Nom complet</label>
-    <input type="text" name="nom" required>
-
-    <label>Email</label>
-    <input type="email" name="email" required>
-
-    <label>Téléphone</label>
-    <input type="text" name="telephone" required>
-
-    <label>Type de prêt</label>
-    <select name="type_pret" required>
-      <option>Prêt Express</option>
-      <option>Prêt Projet</option>
-      <option>Prêt Business</option>
-    </select>
-
-    <label>Montant désiré</label>
-    <input type="number" name="montant" required>
-
-    <label>Message (facultatif)</label>
-    <textarea name="message" rows="4"></textarea>
-
-    <button type="submit">Soumettre la Demande</button>
-  </form>
-</div>
+</section>
 
 </body>
 </html>
