@@ -1,0 +1,148 @@
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* GLOBAL */
+body {
+  background: #f5f7fa;
+  color: #003b70;
+}
+
+/* HEADER */
+header {
+  background: white;
+  padding: 15px 25px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+header h2 {
+  color: #003b70;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #003b70;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #003b70;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* DASHBOARD */
+.dashboard {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.balance-card {
+  background: #003b70;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.balance {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* TRANSACTIONS */
+.transactions {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.transaction-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.transaction-list li {
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.transaction-list strong {
+  display: block;
+}
+
+/* FORMS */
+form {
+  max-width: 500px;
+  margin: 30px auto;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* LOGIN & SIGNUP */
+.login-form,
+.signup-form {
+  max-width: 400px;
+  margin: 80px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.login-form h2,
+.signup-form h2 {
+  margin-bottom: 20px;
+}
+
+/* SETTINGS */
+.settings {
+  max-width: 600px;
+  margin: 40px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+}
